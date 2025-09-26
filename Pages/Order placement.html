@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Assets/Dule Cafe logo.jfif">
+  <title>DuLeCafe|Order Form</title>
+</head>
+<body style="background-color: aqua;">
+
+  <h1>DuLe Café Order Form</h1>
+
+  <form action="order.php" method="post">
+    
+    <!-- Customer Name -->
+    <label for="customerName">Your Name:</label>
+    <input type="text" id="customerName" name="customerName" required>
+    <br><br>
+
+    <!-- Drink Selection -->
+    <label for="drink">Choose a drink:</label>
+    <select id="drink" name="drink" required>
+      <option value="">--Select a drink--</option>
+      <option value="coffee">Coffee</option>
+      <option value="tea">Tea</option>
+      <option value="latte">Latte</option>
+      <option value="espresso">Espresso</option>
+    </select>
+    <br><br>
+
+    <!-- Pastry Selection -->
+    <label>Choose pastries:</label><br>
+    <input type="checkbox" id="croissant" name="pastries[]" value="Croissant">
+    <label for="croissant">Croissant</label><br>
+    <input type="checkbox" id="muffin" name="pastries[]" value="Muffin">
+    <label for="muffin">Muffin</label><br>
+    <input type="checkbox" id="bagel" name="pastries[]" value="Bagel">
+    <label for="bagel">Bagel</label><br><br>
+
+    <!-- Quantity -->
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+    <br><br>
+
+    <!-- Special Instructions -->
+    <label for="notes">Special Instructions:</label><br>
+    <textarea id="notes" name="notes" rows="4" cols="30" placeholder="e.g., No sugar, almond milk..."></textarea>
+    <br><br>
+
+    <!-- Submit -->
+    <input type="submit" value="Place Order">
+    <input type="reset" value="Reset Form">
+  </form>
+  <nav>
+            <ul>
+                <li><a href="/index.html">Back to home</a></li>
+                
+            </ul>
+        </nav>
+
+  <footer>
+    <p>&copy; 2025 Du Le Cafe | Designed by Phoshane Lesley</p>
+  </footer>
+
+</body>
+</html>

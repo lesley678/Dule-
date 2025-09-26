@@ -1,0 +1,205 @@
+/* General Body Styles */
+body {
+  background-image: url(Assets/hq720.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 98%); /* Light background */
+  padding: 2rem;
+  color: hsl(0, 0%, 20%); /* Dark text color for readability */
+}
+
+
+
+/* Heading Styles */
+h1 {
+  color: hsl(220, 27%, 96%); /* Coffee brown */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* paragraph style id=p1 */
+#p1{
+  color: hsl(0, 0%, 89%);
+  font-weight: bold;
+  text-shadow: 0.5rem;
+ 
+}
+
+/* Form Container */
+form {
+  max-width: 600px;
+  background: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+  margin: 0 auto; /* Center the form */
+}
+
+/* Label Styles */
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+  color: hsl(0, 0%, 20%);
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Input Button Styles */
+input[type="submit"],
+input[type="reset"] {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Pointer cursor for buttons */
+  font-size: 1.1rem;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: hsl(25, 34%, 33%);
+  color: hsl(0, 0%, 100%);
+  margin-right: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: hsl(27, 32%, 22%);
+}
+
+/* Reset Button */
+input[type="reset"] {
+  background-color: hsl(0, 0%, 80%);
+}
+
+input[type="reset"]:hover {
+  background-color: hsl(0, 0%, 67%);
+}
+
+
+/* Fieldset and Legend for Grouping Inputs */
+fieldset {
+  border: 1px solid hsl(0, 0%, 87%);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsl(25, 34%, 33%);
+}
+
+/* Checkbox and Label Styles */
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer; /* Pointer cursor for checkboxes */
+}
+
+/* Textarea Styles */
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px;
+}
+
+/* Navigation Styles */
+nav ul {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: hsl(0, 40%, 98%);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer; /* Pointer cursor for links */
+}
+
+nav ul li a:hover {
+  color: hsl(27, 32%, 22%);
+  text-decoration: underline;
+}
+
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: lighter;
+  font-size: 15px;
+  color: hsl(149, 49%, 84%);
+}
+
+/* Responsiveness for Small Screens */
+@media (max-width: 600px) {
+  form {
+    padding: 1rem;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 0.6rem 1.2rem;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  /* Social Media Icon Styles */
+.social-media {
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px 0;
+    background-color: hsl(0, 0%, 96%); /* light background */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.social-media a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: hsl(0, 0%, 27%); /* default icon color */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: hsl(28, 72%, 41%); /* coffee brown for hover effect */
+    transform: scale(1.2); /* grow on hover */
+}
+
+
+}
